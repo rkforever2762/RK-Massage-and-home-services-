@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RK Luxury Spa | Best Spa in Basti</title>
+
+<meta name="description" content="Best Spa in Basti Uttar Pradesh. Full body massage, aroma therapy, home service available. Book now on WhatsApp 8503956450">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#0a0a0a;
+color:white;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:black;
+color:gold;
+text-align:center;
+padding:15px;
+z-index:1000;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero h1{
+background:rgba(0,0,0,0.6);
+padding:20px;
+border-radius:15px;
+font-size:40px;
+}
+
+.section{
+padding:70px 20px;
+text-align:center;
+}
+
+.card{
+display:inline-block;
+width:250px;
+margin:15px;
+padding:20px;
+background:rgba(255,255,255,0.05);
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.1);
+background:gold;
+color:black;
+}
+
+.gallery img{
+width:260px;
+margin:10px;
+border-radius:12px;
+}
+
+input,select{
+padding:10px;
+margin:10px;
+border-radius:10px;
+border:none;
+width:200px;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:gold;
+font-weight:bold;
+cursor:pointer;
+margin:5px;
+}
+
+button:hover{
+background:orange;
+}
+
+.review-box{
+border:1px solid gold;
+margin:10px;
+padding:10px;
+border-radius:10px;
+}
+
+footer{
+background:black;
+padding:20px;
+text-align:center;
+color:gray;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:green;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>RK LUXURY SPA - BASTI</header>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Best Spa Service in Basti<br>Home Service Available 💆‍♂️</h1>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+<h2>Our Services</h2>
+
+<div class="card">Full Body Massage</div>
+<div class="card">Aroma Therapy</div>
+<div class="card">Deep Tissue Massage</div>
+<div class="card">Couple Spa</div>
+</section>
+
+<!-- OFFER -->
+<section class="section">
+<h2>🔥 Today Offer</h2>
+<p style="color:gold;font-size:20px;">Full Body Massage Only ₹499</p>
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+<h2>Luxury Gallery</h2>
+
+<img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874">
+<img src="https://images.unsplash.com/photo-1556228720-195a672e8a03">
+<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
+<img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2">
+<img src="https://images.unsplash.com/photo-1596178060810-72b7b90c3d74">
+<img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35">
+
+</section>
+
+<!-- BOOKING -->
+<section class="section">
+<h2>Book Appointment</h2>
+
+<input type="text" id="name" placeholder="Your Name"><br>
+<input type="date" id="date"><br>
+
+<select id="service">
+<option>Full Body</option>
+<option>Aroma</option>
+<option>Deep Tissue</option>
+</select><br>
+
+<button onclick="payNow()">Pay via UPI</button>
+<button onclick="whatsapp()">WhatsApp Booking</button>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+<h2>Contact</h2>
+
+<p>📞 8503956450</p>
+<p>💳 8503956450@ybl</p>
+
+<a href="tel:8503956450"><button>Call Now</button></a>
+</section>
+
+<!-- REVIEWS -->
+<section class="section">
+<h2>Customer Reviews</h2>
+
+<div class="review-box">
+Rahul ⭐⭐⭐⭐⭐<br>Best spa in Basti 👍
+</div>
+
+<div class="review-box">
+Amit ⭐⭐⭐⭐⭐<br>Very relaxing experience
+</div>
+</section>
+
+<!-- LOCATION -->
+<section class="section">
+<h2>Our Location</h2>
+
+<p>RK Luxury Spa, Basti, Uttar Pradesh</p>
+
+<a href="https://www.google.com/maps/search/?api=1&query=Basti+Uttar+Pradesh">
+<button>Open Map</button>
+</a>
+
+<br><br>
+
+<iframe 
+src="https://maps.google.com/maps?q=Basti%20Uttar%20Pradesh&z=13&output=embed"
+width="90%" height="300" style="border-radius:15px;">
+</iframe>
+</section>
+
+<footer>© RK Luxury Spa 2026</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp" href="https://wa.me/918503956450">💬</a>
+
+<script>
+function payNow(){
+window.location.href="upi://pay?pa=8503956450@ybl&pn=RK Spa&cu=INR";
+}
+
+function whatsapp(){
+let name=document.getElementById("name").value;
+let date=document.getElementById("date").value;
+let service=document.getElementById("service").value;
+
+let msg=`Hello RK Spa%0AName:${name}%0ADate:${date}%0AService:${service}`;
+
+window.open("https://wa.me/918503956450?text="+msg);
+}
+</script>
+
+</body>
+</html>
