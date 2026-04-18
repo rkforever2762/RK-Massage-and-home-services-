@@ -6,7 +6,7 @@
 
 <title>RK Massage & Home Services | Basti</title>
 
-<meta name="description" content="Best Home Massage Service in Basti Uttar Pradesh. 24/7 booking available. Call or WhatsApp 8503956450">
+<meta name="description" content="Best Home Massage Service in Basti Uttar Pradesh. 24/7 home service available. Call or WhatsApp 8503956450">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
@@ -26,8 +26,8 @@ background:black;
 color:gold;
 text-align:center;
 padding:15px;
-z-index:1000;
 font-weight:bold;
+z-index:1000;
 }
 
 .hero{
@@ -67,6 +67,14 @@ background:gold;
 color:black;
 }
 
+input,select{
+padding:10px;
+margin:8px;
+border-radius:10px;
+border:none;
+width:200px;
+}
+
 button{
 padding:12px 20px;
 border:none;
@@ -79,14 +87,6 @@ margin:5px;
 
 button:hover{
 background:orange;
-}
-
-input,select{
-padding:10px;
-margin:8px;
-border-radius:10px;
-border:none;
-width:200px;
 }
 
 .review{
@@ -103,7 +103,7 @@ text-align:center;
 color:gray;
 }
 
-/* WhatsApp floating */
+/* WhatsApp floating button */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -120,25 +120,32 @@ text-decoration:none;
 
 <body>
 
-<header>RK HOME MASSAGE SERVICES - BASTI</header>
+<header>RK HOME MASSAGE SERVICE - BASTI</header>
 
 <!-- HERO -->
 <section class="hero">
-<h1>Best Home Massage Service in Basti<br>24/7 Booking Available 💆‍♂️</h1>
+<h1>Best Home Massage Service in Basti<br>24/7 Doorstep Service 💆‍♂️</h1>
 </section>
 
 <!-- SERVICES -->
 <section class="section">
 <h2>Our Services</h2>
+
 <div class="card">Full Body Massage</div>
 <div class="card">Aroma Therapy</div>
 <div class="card">Deep Tissue</div>
 <div class="card">Home Service</div>
 </section>
 
+<!-- OFFER -->
+<section class="section">
+<h2>🔥 Today Offer</h2>
+<p style="color:gold;font-size:20px;">Full Body Massage ₹499 Only</p>
+</section>
+
 <!-- BOOKING -->
 <section class="section">
-<h2>Book Now</h2>
+<h2>Book Appointment</h2>
 
 <input type="text" id="name" placeholder="Your Name"><br>
 <input type="date" id="date"><br>
@@ -171,11 +178,12 @@ text-decoration:none;
 
 <div class="review">⭐⭐⭐⭐⭐ Best service in Basti - Rahul</div>
 <div class="review">⭐⭐⭐⭐⭐ Very professional - Amit</div>
+<div class="review">⭐⭐⭐⭐⭐ Amazing experience</div>
 </section>
 
 <!-- LOCATION -->
 <section class="section">
-<h2>Location</h2>
+<h2>Our Location</h2>
 
 <p>RK Massage Service, Basti, Uttar Pradesh</p>
 
@@ -193,7 +201,7 @@ width="90%" height="300" style="border-radius:15px;">
 
 <footer>© RK Massage Services 2026</footer>
 
-<!-- WhatsApp -->
+<!-- WhatsApp Floating Button -->
 <a class="whatsapp" href="https://wa.me/918503956450">💬</a>
 
 <script>
@@ -202,7 +210,7 @@ let name=document.getElementById("name").value;
 let date=document.getElementById("date").value;
 let service=document.getElementById("service").value;
 
-let msg=`Hello,%0AName:${name}%0ADate:${date}%0AService:${service}`;
+let msg=`Hello RK Massage Service%0AName:${name}%0ADate:${date}%0AService:${service}`;
 
 window.open("https://wa.me/918503956450?text="+msg);
 }
