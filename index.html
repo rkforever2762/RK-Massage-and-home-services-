@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RK Massage & Home Services | Basti</title>
+<title>RK Luxury Spa | Premium Home Massage Service</title>
 
-<meta name="description" content="Best Home Massage Service in Basti Uttar Pradesh. 24/7 home service available. Call or WhatsApp 8503956450">
+<meta name="description" content="Best Home Massage Service in Basti. 24/7 Doorstep Service. WhatsApp 8503956450">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
@@ -18,18 +18,39 @@ background:#0a0a0a;
 color:white;
 }
 
+/* LOADER */
+#loader{
+position:fixed;
+width:100%;
+height:100%;
+background:black;
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+color:gold;
+font-size:20px;
+}
+
+/* HEADER */
 header{
 position:fixed;
 top:0;
 width:100%;
-background:black;
-color:gold;
-text-align:center;
+background:rgba(0,0,0,0.85);
 padding:15px;
-font-weight:bold;
+text-align:center;
+border-bottom:1px solid gold;
 z-index:1000;
 }
 
+.logo{
+color:gold;
+font-weight:bold;
+font-size:20px;
+}
+
+/* HERO */
 .hero{
 height:100vh;
 background:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874') center/cover no-repeat;
@@ -39,18 +60,32 @@ justify-content:center;
 text-align:center;
 }
 
-.hero h1{
+.hero-box{
 background:rgba(0,0,0,0.6);
-padding:20px;
+padding:25px;
 border-radius:15px;
-font-size:35px;
 }
 
+.hero-box h1{
+font-size:32px;
+margin:0;
+}
+
+.badge{
+color:lightgreen;
+margin-top:10px;
+font-size:14px;
+}
+
+/* SECTION */
 .section{
 padding:70px 20px;
 text-align:center;
 }
 
+h2{color:gold;}
+
+/* CARD */
 .card{
 display:inline-block;
 width:240px;
@@ -58,15 +93,25 @@ margin:10px;
 padding:20px;
 background:rgba(255,255,255,0.05);
 border-radius:15px;
-transition:0.3s;
+border:1px solid rgba(255,215,0,0.2);
 }
 
-.card:hover{
-transform:scale(1.05);
-background:gold;
-color:black;
+/* PRICE BOX */
+.price{
+color:gold;
+font-weight:bold;
 }
 
+/* REVIEW */
+.review{
+border:1px solid gold;
+margin:10px auto;
+padding:10px;
+border-radius:10px;
+width:80%;
+}
+
+/* INPUT */
 input,select{
 padding:10px;
 margin:8px;
@@ -75,6 +120,7 @@ border:none;
 width:200px;
 }
 
+/* BUTTON */
 button{
 padding:12px 20px;
 border:none;
@@ -85,17 +131,7 @@ cursor:pointer;
 margin:5px;
 }
 
-button:hover{
-background:orange;
-}
-
-.review{
-border:1px solid gold;
-margin:10px;
-padding:10px;
-border-radius:10px;
-}
-
+/* FOOTER */
 footer{
 background:black;
 padding:20px;
@@ -103,10 +139,10 @@ text-align:center;
 color:gray;
 }
 
-/* WhatsApp floating button */
+/* WHATSAPP FLOAT */
 .whatsapp{
 position:fixed;
-bottom:20px;
+bottom:80px;
 right:20px;
 background:green;
 color:white;
@@ -115,35 +151,59 @@ border-radius:50%;
 font-size:22px;
 text-decoration:none;
 }
+
+/* STICKY BAR */
+.sticky{
+position:fixed;
+bottom:0;
+width:100%;
+display:flex;
+justify-content:space-around;
+background:black;
+padding:10px;
+border-top:1px solid gold;
+}
+
+.sticky a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+.sticky a:nth-child(2){
+color:gold;
+}
 </style>
 </head>
 
 <body>
 
-<header>RK HOME MASSAGE SERVICE - BASTI</header>
+<!-- LOADER -->
+<div id="loader">Loading Luxury Spa...</div>
+
+<header>
+<div class="logo">RK LUXURY SPA ✔ Verified Service</div>
+</header>
 
 <!-- HERO -->
 <section class="hero">
-<h1>Best Home Massage Service in Basti<br>24/7 Doorstep Service 💆‍♂️</h1>
+<div class="hero-box">
+<h1>Premium Home Massage Service</h1>
+<div class="badge">⭐ 4.9/5 Rated Service in Basti</div>
+</div>
 </section>
 
 <!-- SERVICES -->
 <section class="section">
 <h2>Our Services</h2>
 
-<div class="card">Full Body Massage</div>
-<div class="card">Aroma Therapy</div>
-<div class="card">Deep Tissue</div>
-<div class="card">Home Service</div>
+<div class="card">Full Body Massage <div class="price">₹499</div></div>
+<div class="card">Aroma Therapy <div class="price">₹599</div></div>
+<div class="card">Deep Tissue <div class="price">₹699</div></div>
+<div class="card">Home Service <div class="price">24/7</div></div>
 </section>
 
-<!-- OFFER -->
-<section class="section">
-<h2>🔥 Today Offer</h2>
-<p style="color:gold;font-size:20px;">Full Body Massage ₹499 Only</p>
-</section>
-
-<!-- BOOKING -->
+<!-- BOOK -->
 <section class="section">
 <h2>Book Appointment</h2>
 
@@ -167,25 +227,23 @@ text-decoration:none;
 <p>📞 8503956450</p>
 <p>💳 8503956450@ybl</p>
 
-<a href="tel:8503956450">
-<button>Call Now</button>
-</a>
+<a href="tel:8503956450"><button>Call Now</button></a>
 </section>
 
 <!-- REVIEWS -->
 <section class="section">
 <h2>Customer Reviews</h2>
 
-<div class="review">⭐⭐⭐⭐⭐ Best service in Basti - Rahul</div>
+<div class="review">⭐⭐⭐⭐⭐ Excellent service - Rahul</div>
 <div class="review">⭐⭐⭐⭐⭐ Very professional - Amit</div>
-<div class="review">⭐⭐⭐⭐⭐ Amazing experience</div>
+<div class="review">⭐⭐⭐⭐⭐ Best spa in Basti - Suresh</div>
 </section>
 
 <!-- LOCATION -->
 <section class="section">
-<h2>Our Location</h2>
+<h2>Location</h2>
 
-<p>RK Massage Service, Basti, Uttar Pradesh</p>
+<p>RK Luxury Spa, Basti, UP</p>
 
 <a href="https://www.google.com/maps/search/?api=1&query=Basti+Uttar+Pradesh">
 <button>Open Map</button>
@@ -199,24 +257,35 @@ width="90%" height="300" style="border-radius:15px;">
 </iframe>
 </section>
 
-<footer>© RK Massage Services 2026</footer>
+<footer>
+© RK LUXURY SPA 2026 | Premium Service
+</footer>
 
-<!-- WhatsApp Floating Button -->
+<!-- FLOAT BUTTON -->
 <a class="whatsapp" href="https://wa.me/918503956450">💬</a>
 
+<!-- STICKY ACTION BAR -->
+<div class="sticky">
+<a href="tel:8503956450">📞 Call</a>
+<a href="https://wa.me/918503956450">💬 WhatsApp</a>
+<a href="upi://pay?pa=8503956450@ybl">💳 Pay</a>
+</div>
+
 <script>
+setTimeout(()=>document.getElementById("loader").style.display="none",1200);
+
 function whatsapp(){
 let name=document.getElementById("name").value;
 let date=document.getElementById("date").value;
 let service=document.getElementById("service").value;
 
-let msg=`Hello RK Massage Service%0AName:${name}%0ADate:${date}%0AService:${service}`;
+let msg=`Hello RK Spa%0AName:${name}%0ADate:${date}%0AService:${service}`;
 
 window.open("https://wa.me/918503956450?text="+msg);
 }
 
 function payNow(){
-window.location.href="upi://pay?pa=8503956450@ybl&pn=Massage&cu=INR";
+window.location.href="upi://pay?pa=8503956450@ybl&pn=RK Spa&cu=INR";
 }
 </script>
 
